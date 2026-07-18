@@ -1,14 +1,9 @@
-<!doctype html>
-<html lang="eng">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-</head>
-<body>
-<h1>Hello World</h1>
-<a href="/about">About</a>
-</body>
-</html>
+<x-layout title="Home Page">
+    <h1>Hello World!</h1>
+    <x-card class="border-red">
+        <p>Hello from inside the card</p>
+    </x-card>
+    <x-card>
+        <p>Hello from inside the card</p>
+    </x-card>
+</x-layout>
