@@ -1,16 +1,3 @@
-<div {{ $attributes->merge(['class' => 'card']) }}>
+<div {{ $attributes->merge(['class' => 'card bg-base-300 w-96 shadow-sm p-5']) }}>
     {{ $slot }}
 </div>
-
-<style>
-    .card {
-        background: #62605b;
-        border: 1px solid #1c1c1a;
-        max-width: 400px;
-        margin: 5px auto;
-    }
-
-    .border-red {
-        border: 1px solid red;
-    }
-</style>

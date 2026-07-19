@@ -3,21 +3,24 @@
 ])
 
 <!doctype html>
-<html lang="eng">
-<head>
+<html lang="eng" data-theme="night">
+<head >
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
     <title>{{ $title }}</title>
 </head>
 <body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/contact">Contact Us</a>
-        <a href="/about">About Us</a>
-    </nav>
-    <main>
+    <x-navbar>
+        <li><a href="/">Home</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+        <li><a href="/about">About Us</a></li>
+    </x-navbar>
+    <main class="pt-5 px-3">
         {{ $slot }}
     </main>
 </body>
